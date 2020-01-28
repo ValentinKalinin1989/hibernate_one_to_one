@@ -17,11 +17,20 @@ public class CreateDemo {
         Session session = factory.getCurrentSession();
 
         try {
+            /*
             Instructor tempInstructor =
                     new Instructor("Chad", "Darby", "darby@luv2code.come");
             InstructorDetail tempInstructorDetail = new InstructorDetail(
                     "http://www.luv2code.com",
                     "Luv 2 code!!!");
+
+             */
+            Instructor tempInstructor =
+                    new Instructor("Madhu", "Patel", "madhuy@luv2code.come");
+            InstructorDetail tempInstructorDetail = new InstructorDetail(
+                    "http://youtube.com",
+                    "Luv 2 code!!!");
+
             tempInstructor.setInstructorDetail(tempInstructorDetail);
 
             session.beginTransaction();
